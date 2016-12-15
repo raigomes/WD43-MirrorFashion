@@ -1,0 +1,112 @@
+body {
+	color: #333333;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	text-align: justify;
+	margin-top: 0;
+	margin-left: auto;
+	margin-right: auto;
+	width: 940px;			
+}
+
+h1 {
+	margin-top: inherit;
+}
+
+h1.titulo {
+	background-image: url(../img/sobre-background.jpg);
+	padding: 10px;
+}
+
+h2 {
+	border-bottom: 2px solid #333333;
+	margin-top: 30px;
+}
+/* Cabeçalho */
+header {
+	position: relative;	
+	/*border: 1px solid black;	*/
+}
+
+.container {
+	margin: 0 auto;
+	width: 940px;
+}
+
+.sacola {		
+	background: url(../img/sacola.png) no-repeat top right;
+	font-size: 14px;
+	margin: inherit;
+	padding-right: 35px;
+	padding-top: 8px;
+	text-align: right;
+	width: 140px;
+	position: absolute; /* Vincula-se ao header que tem "position: relative;" */
+	top: 0;
+	right: 0;
+}
+
+.menu-opcoes {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}
+
+.menu-opcoes a {
+	color: #003366;
+}
+
+.menu-opcoes ul {
+	font-size: 15px;
+}
+
+.menu-opcoes ul li {
+	display: inline;
+	margin-left: 20px;
+}
+/* FIM Cabeçalho */
+
+/* Corpo do Texto */
+#centro-distribuicao {
+	margin-left: auto;
+	margin-right: auto;
+	width: 550px;
+	/*float: right;*/
+}
+
+#familia-pelho {
+	float: left;
+	margin: 0 10px 10px 10px;
+}
+
+figure {
+	background-color: #F2EDED;
+	border: 1px solid #ccc;
+	text-align: center;
+	padding: 15px;
+	margin: 30px;
+}
+
+figcaption {
+	font-style: italic;
+	margin-top: 10px;
+}
+
+p {
+	padding: 8px 45px;
+	text-indent: 15px;
+}
+/* FIM Corpo do Texto */
+
+/* Rodapé */
+#rodape {
+	color: #777;
+	margin: 30px 0;
+	padding: 30px 0;
+}
+
+#rodape img {
+	margin-right: 30px;
+	vertical-align: middle;
+	width: 94px;
+}
+/* FIM Rodapé */
