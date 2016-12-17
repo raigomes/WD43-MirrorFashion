@@ -1,11 +1,6 @@
 body {
 	color: #333333;
-	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
-	text-align: justify;
-	margin-top: 0;
-	margin-left: auto;
-	margin-right: auto;
-	width: 940px;			
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;		
 }
 
 h1 {
@@ -21,15 +16,16 @@ h2 {
 	border-bottom: 2px solid #333333;
 	margin-top: 30px;
 }
-/* Cabeçalho */
-header {
-	position: relative;	
-	/*border: 1px solid black;	*/
-}
 
 .container {
 	margin: 0 auto;
 	width: 940px;
+}
+
+/* Cabeçalho */
+header {
+	position: relative;	
+	/*border: 1px solid black;	*/
 }
 
 .sacola {		
@@ -66,6 +62,14 @@ header {
 /* FIM Cabeçalho */
 
 /* Corpo do Texto */
+article {
+	width: 940px;
+	text-align: justify;
+	margin-top: 0;
+	margin-left: auto;
+	margin-right: auto;
+}
+
 #centro-distribuicao {
 	margin-left: auto;
 	margin-right: auto;
@@ -98,15 +102,45 @@ p {
 /* FIM Corpo do Texto */
 
 /* Rodapé */
-#rodape {
-	color: #777;
-	margin: 30px 0;
-	padding: 30px 0;
+footer {
+	background-image: url(../img/fundo-rodape.png);
+	clear: both;
+	padding: 20px 0;	
 }
 
-#rodape img {
-	margin-right: 30px;
-	vertical-align: middle;
-	width: 94px;
+footer .container {
+	position: relative;
+}
+
+.social {
+	position: absolute;
+	top: 12px;
+	right: 0;
+}
+
+.social a {
+	/* tamanho da imagem */
+	height: 32px;
+	width: 32px;
+	/* image replacement */
+	display: block;
+	text-indent: -9999px;
+}
+
+.social a[href*="facebook.com"] {
+	background-image: url(../img/facebook.png);
+}
+
+.social a[href*="twitter.com"] {
+	background-image: url(../img/twitter.png);
+}
+
+.social a[href*="plus.google.com"] {
+	background-image: url(../img/googleplus.png);
+}
+
+.social li {
+	float: left;
+	margin-left: 25px;
 }
 /* FIM Rodapé */
