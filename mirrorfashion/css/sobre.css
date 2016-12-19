@@ -1,20 +1,7 @@
 body {
 	color: #333333;
 	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;		
-}
-
-h1 {
-	margin-top: inherit;
-}
-
-h1.titulo {
-	background-image: url(../img/sobre-background.jpg);
-	padding: 10px;
-}
-
-h2 {
-	border-bottom: 2px solid #333333;
-	margin-top: 30px;
+	margin: 0;
 }
 
 .container {
@@ -70,16 +57,35 @@ article {
 	margin-right: auto;
 }
 
-#centro-distribuicao {
-	margin-left: auto;
-	margin-right: auto;
-	width: 550px;
-	/*float: right;*/
+h1 {
+	margin-top: inherit;
 }
 
-#familia-pelho {
-	float: left;
-	margin: 0 10px 10px 10px;
+h1.titulo {
+	background-image: url(../img/sobre-background.jpg);
+	padding: 10px;
+}
+
+h2 {
+	border-bottom: 2px solid #333333;
+	margin-top: 30px;
+}
+
+p {
+	padding: 8px 45px;
+	text-indent: 15px;
+}
+
+h1 + p {
+	text-indent: 10px;
+}
+
+p:first-letter {
+	font-weight: bold;
+}
+
+:not(p) + p:first-line {
+	font-variant: small-caps;
 }
 
 figure {
@@ -95,10 +101,18 @@ figcaption {
 	margin-top: 10px;
 }
 
-p {
-	padding: 8px 45px;
-	text-indent: 15px;
+#centro-distribuicao {
+	margin-left: auto;
+	margin-right: auto;
+	width: 550px;
+	/*float: right;*/
 }
+
+#familia-pelho {
+	float: left;
+	margin: 0 10px 10px 10px;
+}
+
 /* FIM Corpo do Texto */
 
 /* Rodapé */

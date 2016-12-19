@@ -36,6 +36,16 @@ header {
 	color: #003366;
 }
 
+/*Cor do item quando o cursor é apontado*/
+.menu-opcoes a:hover {
+	color: #007dc6; 
+}
+
+/*Cor do item quando o cursor está sendo clicado*/
+.menu-opcoes a:active {
+	color: #867dc6;
+}
+
 .menu-opcoes ul {
 	font-size: 15px;
 }
@@ -45,6 +55,7 @@ header {
 	margin-left: 20px;
 }
 /* FIM Cabeçalho*/
+
 /* Seção Central */
 .destaque {
 	margin-top: 10px;
@@ -80,16 +91,36 @@ header {
 	margin: 10px;
 }
 
+.menu-departamentos a {
+	color: #333333;
+	text-decoration: none;
+}
+
 .menu-departamentos li {
 	background-color: white;
 	margin-bottom: 1px;
 	padding: 5px 10px;	
 }
 
-.menu-departamentos a {
-	color: #333333;
-	text-decoration: none;
+/*## Incluindo visibilidade do submenu com CSS ##*/
+.menu-departamentos li ul {
+	display: none;
 }
+
+.menu-departamentos li:hover ul {
+	display: block;
+}
+
+.menu-departamentos ul ul li {
+	background-color: #dcdcdc;
+}
+
+.menu-departamentos li li a:before {
+	content: '\272A'; /*:= ✪ */
+	padding-right: 3px;
+}
+
+/*## FIM Incluindo visibilidade do submenu com CSS ##*/
 
 .painel {
 	margin: 10px 0;
@@ -106,11 +137,18 @@ header {
 }
 
 .painel h2 {
-	font-size: 24px;
+	font-size: 24px
 	font-weight: bold;
 	text-transform: uppercase;
 	margin-bottom: 10px;
 }
+
+.painel h2:before {
+	content: '\2756'; /*:= ❖ */
+	padding-right: 5px;
+	opacity: 0.4;
+}
+
 .painel a {
 	color: #333;
 	font-size: 14px;
