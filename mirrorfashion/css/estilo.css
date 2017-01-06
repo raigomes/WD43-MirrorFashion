@@ -143,6 +143,12 @@ header {
 	padding-bottom: 10px;
 }
 
+/* Incluir sombreamento quando passa o mouse por um produto com transition*/
+.painel li:hover {
+	box-shadow: 0 0 5px #333;
+	transition: box-shadow 0.7s;
+}
+
 .painel h2 {
 	font-size: 24px
 	font-weight: bold;
