@@ -1,0 +1,57 @@
+.container {
+	width: 96%;
+}
+
+header h1 {
+	text-align: center;
+}
+
+header h1 img {
+	max-width: 50%;
+}
+
+.sacola {
+	display: none;
+}
+
+.menu-opcoes {
+	position: static;
+	text-align: center;
+	padding-right: 8%; 	
+}
+
+.menu-opcoes ul li {
+	display: inline-block;
+	margin: 5px;
+}
+
+article {
+	width: 100%;
+}
+
+section {
+	position: relative;
+}
+
+h2 {	
+	padding-left: 2%;
+}
+
+figure {
+	max-width: 80%;
+	margin: auto;
+	float: none;
+}
+
+figure img {
+	width: 100%;
+}
+
+#familia-pelho {
+	position: absolute;
+	left: 25%;
+}
+
+p {
+	clear: both;
+}
