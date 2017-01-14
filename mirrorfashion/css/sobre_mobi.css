@@ -29,18 +29,12 @@ article {
 	width: 100%;
 }
 
-section {
-	position: relative;
-}
-
 h2 {	
 	padding-left: 2%;
 }
 
 figure {
-	max-width: 80%;
-	margin: auto;
-	float: none;
+	max-width: 80%;	
 }
 
 figure img {
@@ -48,10 +42,6 @@ figure img {
 }
 
 #familia-pelho {
-	position: absolute;
-	left: 25%;
-}
-
-p {
-	clear: both;
+	float: none;
+	margin: auto;
 }
