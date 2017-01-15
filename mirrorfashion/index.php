@@ -5,33 +5,15 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width">
 	<link rel="stylesheet" href="css/reset.css">
-	<link rel="stylesheet" href="css/estilo.css">
+	<link rel="stylesheet" href="css/estilos.css">
 	<link rel="stylesheet" href="css/mobile.css" media="(max-width: 939px)">
 		<!--[if lt IE 9]>
 			<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 			<![endif]-->
 		</head>
 		<body>			
-			<header class="container">
-				<!-- Logo dentro do h1 para representar o título-->
-				<h1><img src="img/logo.png" alt="Mirror Fashion"></h1>
+			<?php include("cabecalho.php"); ?>
 
-				<!-- Sacola de compras (imagem no CSS)-->
-				<p class="sacola">
-					Nenhum item na sacola de compras
-				</p>
-
-				<!-- Menu do cabeçalho-->
-				<nav class="menu-opcoes">
-					<ul>
-						<li><a href="#">Sua Conta</a></li>
-						<li><a href="#">Lista de Desejos</a></li>
-						<li><a href="#">Cartão Fidelidade</a></li>
-						<li><a href="sobre.html">Sobre</a></li>
-						<li><a href="#">Ajuda</a></li>
-					</ul>
-				</nav>
-			</header>
 			<br><br>
 			<div class="container destaque">
 				<section class="busca">
@@ -152,15 +134,6 @@
 				</section>
 			</div>
 
-			<footer>
-				<div class="container">
-					<img src="img/logo-rodape.png" alt="Logo Mirror Fashion">
-					<ul class="social">
-						<li><a href="http://facebook.com/mirrorfashion">Facebook</a></li>
-						<li><a href="http://twitter.com/mirrorfashion">Twitter</a></li>
-						<li><a href="http://plus.google.com/mirrorfashion">Google+</a></li>
-					</ul>
-				</div>
-			</footer>
-		</body>
-		</html>
+			<?php include("rodape.php"); ?>
+	</body>
+</html>
